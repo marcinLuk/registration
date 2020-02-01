@@ -11,15 +11,16 @@
         <link rel="stylesheet" href="style.css">
     
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/form.validate.js"></script>
-    
-        <title><?php echo Page::get_title();?></title>
+        <script src="<?php echo ROOT.'js/ajax.js'?>"></script>
+        <script src="<?php echo ROOT.'js/main.js'?>"></script>
+
+        <title> <?php echo $_SESSION['page_title']; ?> </title>
     </head>
 
 <body class="d-flex align-items-center justify-content-center">
     <div class="col-4">
         <div class="row">
             <div class="col">
-                <h2 class="text-center p-4"> <?php echo Page::get_title();?></h2>
+                <h2 class="text-center p-4"> <?php echo $_SESSION['page_title']; ?> </h2>
             </div>
         </div>
