@@ -1,10 +1,10 @@
 <?php 
-namespace App\classes;
+
 include 'config.php';
 
 session_start();
 
-$page = new PageTemplates; 
+$page = new App\classes\PageTemplates; 
 
 $page->set_title( 'Welcome!' );
 $page->get_header();

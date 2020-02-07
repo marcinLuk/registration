@@ -1,12 +1,11 @@
-<?php namespace App\classes;
-
+<?php 
 require_once '../config.php'; 
 session_start();
 
 $email = filter_var ( trim( $_POST['email'] ), FILTER_SANITIZE_EMAIL) ;
 $password = filter_var ( trim( $_POST['pass1'] ), FILTER_SANITIZE_STRING) ;
 
-$user = new User; 
+$user = new App\classes\User; 
 
 if ( !$user->check_if_user_exist( $email ) ) {
 

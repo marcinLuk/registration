@@ -1,10 +1,9 @@
 <?php 
-namespace App\classes;
 
 require_once '../config.php'; 
 session_start(); 
 
-$check_input = new CheckInput; 
+$check_input = new App\classes\CheckInput; 
 
 $value = filter_var ( trim( $_POST['value'] ), FILTER_SANITIZE_EMAIL) ;
 $type = $_POST['type'] ;

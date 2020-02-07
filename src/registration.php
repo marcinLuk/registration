@@ -1,9 +1,9 @@
-<?php namespace App\classes;
+<?php
 
 require_once '../config.php'; 
 session_start();
 
-$user = new User;
+$user = new App\classes\User;
 
 $email = $_SESSION['email'];
 $name = $_SESSION['name'];

@@ -1,12 +1,15 @@
 <?php 
-namespace App\classes;
+
 include 'config.php';
 
+
 session_start();
+
 if( isset( $_SESSION['login'] ) ) {
     header('Location: account.php');
 }
-$page = new PageTemplates; 
+
+$page = new App\classes\PageTemplates; 
 
 $page->set_title( 'Welcome' );
 $page->get_header();

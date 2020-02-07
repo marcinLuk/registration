@@ -1,5 +1,5 @@
 <?php 
-namespace App\classes;
+use App\classes;
 include 'config.php';
 
 session_start();
